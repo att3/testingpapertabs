@@ -9,6 +9,7 @@ try {
     require('react-native-vector-icons/MaterialCommunityIcons').default
   );
 } catch (e) {
+  /*
   let isErrorLogged = false;
 
   // Fallback component for icons
@@ -37,6 +38,7 @@ try {
       </Animated.Text>
     );
   };
+  */
 }
 
 const defaultIcon = ({ name, color, size, style, ...rest }: any) => (
