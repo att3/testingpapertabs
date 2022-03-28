@@ -111,6 +111,7 @@ export default function TabsHeaderItem({
                 iconPosition !== 'top' && styles.marginRight,
               ]}
             >
+              {typeof tab.props.icon!=='string' ? tab.props.icon :
               <MaterialCommunityIcon
                 selectable={false}
                 accessibilityElementsHidden={true}
@@ -119,6 +120,7 @@ export default function TabsHeaderItem({
                 style={{ color: color, opacity }}
                 size={24}
               />
+              }
             </View>
           ) : null}
           {showTextLabel ? (
